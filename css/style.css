@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url('/assets/font/WubbaLubbaDubDub.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    list-style: none;
+    color: #fff
+}
+body{
+    background-image: url('/assets/img/background.jpg');
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* joga um pra esquerda e outro pra direita */
+    padding: 0 40px; /* margem interna nas laterais */
+    background-color: #00000077;
+}
+.logo{
+    width: 250px;
+    height: 100%;;
+    display: flex;
+    align-items:center;
+    margin-left: 65px;
+}
+.logo_img{
+    width: auto;
+    height: 80px;
+    margin-left: 50px;
+}
+.social_media{
+    width: 350px;
+    padding-right: 75px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 6px;
+}
+i {
+    font-size: 1.2rem;
+}
+i:hover{
+    color: chartreuse;
+}
+.main_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0;
+}
+h2{
+    font-family: 'Get Schwifty', sans-serif;
+    margin-left: 3px;
+    margin-bottom: 35px;
+    color: chartreuse;
+    font-size: 48px;    
+}
+.main_content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* máximo 4 colunas */
+    gap: 20px;                             /* espaço entre os cards */
+    max-width: 100%;                     /* largura máxima do grid */
+    margin: 0 auto;                        /* centraliza no meio */
+    padding: 20px;
+}
+.cards{
+    width: 230px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+.cards:hover{
+    transform:scale(1.02);
+}
+.character_name_bg{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.character_name{
+    font-family: 'Get Schwifty', sans-serif;
+    color: chartreuse;
+    font-size: 1.2rem;    
+}
+.buttons{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button{
+    width: 70px;
+    height: 25px;
+    background-color:chartreuse;
+    color:#000;
+    font-weight: 700;
+    border-radius: 3%;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #000;
+    color:chartreuse;   
+}
+#prevBtn{
+    visibility: hidden;
+}
+footer{
+    background-color: #000000ba;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    row-gap: 30px;
+}
+.footer_logo{
+    font-family: 'Get Schwifty', sans-serif;
+    font-size: 2rem;
+}
+.copyright{
+    font-size: 20px;
+}
+.modal{ 
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+}
+.modal_content{
+    width: 25vw;
+    height: 70vh;
+    background-color: black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+.character_image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.character_details { 
+    font-family: 'Get Schwifty', sans-serif;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    color:chartreuse;   
+}
