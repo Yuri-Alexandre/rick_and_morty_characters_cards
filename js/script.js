@@ -105,7 +105,7 @@ function hideModal(){
 }
 
 
-function converteyeColor(eyeColor) {
+function convertEyeColor(eyeColor) {
     const cores = {
         blue: "azul",
         brown: "marom",
