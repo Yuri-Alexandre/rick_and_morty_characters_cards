@@ -68,7 +68,8 @@ async function loadCharacters(url) {
 
                 const origin = document.createElement('span')
                 origin.className = "character_details"
-                origin.innerText = `origen: ${character.origin.name === "unknown" ? "desconhecida" : "character.origin.name"}`
+                origin.innerText = `Origem: ${character.origin.name === "unknown" ? "desconhecida" : character.origin.name}`
+
                 
                 modalContent.appendChild(characterImage)
                 modalContent.appendChild(name)
@@ -134,7 +135,6 @@ function convertSpecies(species) {
     const characterSpecies = {
         human: "humano",
         alien: "alienígena",
-        humanoide: "humanoide",
         animal: "animal",
         humanoide: "humanoide",
         "mythological creature": "criatura mitologica",

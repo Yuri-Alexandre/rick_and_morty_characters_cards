@@ -11,7 +11,7 @@
     color: #fff
 }
 body{
-    background-image: url('/assets/img/background.jpg');
+    background-image: url('../assets/img/background.jpg');
     background-size: cover;
 }
 a{
@@ -63,7 +63,8 @@ h2{
     margin-left: 3px;
     margin-bottom: 35px;
     color: chartreuse;
-    font-size: 48px;    
+    font-size: 48px;
+    text-align: center;    
 }
 .main_content{
     display: grid;
@@ -180,4 +181,16 @@ footer{
     font-size: 1.7rem;
     font-weight: lighter;
     color:chartreuse;   
+}
+
+@media(max-width: 768px){
+    .main_content {
+        grid-template-columns: repeat(2, 1fr); /* só 2 colunas no tablet */
+    }
+    .social_media{
+        display:flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 0;
+    }
 }
