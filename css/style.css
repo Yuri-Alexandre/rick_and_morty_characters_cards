@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Get Schwifty';
-    src: url('/assets/font/WubbaLubbaDubDub.ttf') format('truetype');
+    src: url('../assets/font/WubbaLubbaDubDub.ttf') format('truetype');
 }
 
 * {
@@ -190,7 +190,7 @@ footer{
     .social_media{
         display:flex;
         flex-direction: column;
-        align-items: end;
+        align-items:flex-end;
         padding: 0;
     }
 }
