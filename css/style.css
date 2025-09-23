@@ -197,3 +197,15 @@ footer{
     margin-left: 0;
     }
 }
+
+@media(max-width: 480px){
+    .main_content {
+        grid-template-columns: 1fr; /* só 1 card por linha */
+    }
+    h2 {
+        font-size: 32px; /* título menor */
+    }
+    .character_details {
+        font-size: 1.2rem; /* texto menor no modal */
+    }
+}
