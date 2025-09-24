@@ -21,7 +21,7 @@ body{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    
 }
 a{
     text-decoration: none;
@@ -195,7 +195,12 @@ footer{
 .social_media_footer{
     display: none;
 }
-
+@media(max-width: 1024px){
+    .main_content {
+        grid-template-columns: repeat(3, 1fr); /* só 2 colunas no tablet */
+    }
+    
+}
 @media(max-width: 768px){
     header, footer {
     width: 100%;
