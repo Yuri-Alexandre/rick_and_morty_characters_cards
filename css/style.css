@@ -197,6 +197,10 @@ footer{
 }
 
 @media(max-width: 768px){
+    header, footer {
+    width: 100%;
+    max-width: 100%;
+    }
     .main_content {
         grid-template-columns: repeat(2, 1fr); /* só 2 colunas no tablet */
     }
@@ -209,8 +213,11 @@ footer{
     .logo{
     margin-left: 0;
     }
+    .modal_content{
+    width: 80vw;
+    height: 70vh;
+    }
 }
-
 @media(max-width: 480px){
     .logo_img{
         margin: 0;
@@ -224,26 +231,21 @@ footer{
     h2 {
         font-size: 32px; /* título menor */
     }
+    .cards{
+        width: 280px;
+    }
     .character_details {
         font-size: 1.2rem; /* texto menor no modal */
     }
-    header, footer {
-    width: 100%;
-    max-width: 100%;
+    .main_content{
+        display: grid;
+        gap: 20px;                             /* espaço entre os cards */
+        max-width: 100%;                     /* largura máxima do grid */
+        margin: 0 auto;                        /* centraliza no meio */
+        padding: 0px;
     }
     .social_media_footer{
     display: flex;
     gap: 50px;
     }
-    .main_content{
-    display: grid;
-    gap: 20px;                             /* espaço entre os cards */
-    max-width: 100%;                     /* largura máxima do grid */
-    margin: 0 auto;                        /* centraliza no meio */
-    padding: 0px;
-}
-    .cards{
-        width: 280px;
-    }
-
 }
