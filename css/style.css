@@ -85,7 +85,7 @@ h2{
 }
 .cards{
     width: 230px;
-    height: 470px;
+    height: 230px;
     background-position: 50% 50%;
     background-size: cover;
     display: flex;
@@ -197,7 +197,15 @@ footer{
 }
 @media(max-width: 1024px){
     .main_content {
-        grid-template-columns: repeat(3, 1fr); /* só 2 colunas no tablet */
+        grid-template-columns: repeat(4, 1fr); /* só 2 colunas no tablet */
+    }
+    .cards{
+        width: 120px;
+        height: 120px;
+    }
+    .character_name{
+        font-size: 10px; /* título menor */
+        padding: 5px;
     }
     
 }
@@ -207,7 +215,7 @@ footer{
     max-width: 100%;
     }
     .main_content {
-        grid-template-columns: repeat(2, 1fr); /* só 2 colunas no tablet */
+        grid-template-columns: repeat(3, 1fr); /* só 2 colunas no tablet */
     }
     .social_media{
         display:flex;
@@ -222,6 +230,14 @@ footer{
     width: 80vw;
     height: 70vh;
     }
+    .cards{
+        width: 120px;
+        height: 120px;
+    }
+    .character_name{
+        font-size: 10px; /* título menor */
+        padding: 5px;
+    }
 }
 @media(max-width: 480px){
     .logo_img{
@@ -231,13 +247,19 @@ footer{
         display: none;
     }
     .main_content {
-        grid-template-columns: 1fr; /* só 1 card por linha */
+        grid-template-columns: repeat(2, 1fr); /* só 2 colunas no tablet */
     }
     h2 {
-        font-size: 32px; /* título menor */
+        font-size: 22px; /* título menor */
+        padding: 0 10px;
     }
     .cards{
-        width: 280px;
+        width: 120px;
+        height: 120px;
+    }
+    .character_name{
+        font-size: 10px; /* título menor */
+        padding: 5px;
     }
     .character_details {
         font-size: 1.2rem; /* texto menor no modal */
@@ -246,7 +268,7 @@ footer{
         display: grid;
         gap: 20px;                             /* espaço entre os cards */
         max-width: 100%;                     /* largura máxima do grid */
-        margin: 0 auto;                        /* centraliza no meio */
+        margin: 0 10px;                        /* centraliza no meio */
         padding: 0px;
     }
     .social_media_footer{
