@@ -148,6 +148,7 @@ footer{
     padding-top: 60px;
     padding-bottom: 40px;
     row-gap: 30px;
+    vertical-align: baseline;
 }
 .footer_logo{
     font-family: 'Get Schwifty', sans-serif;
@@ -237,6 +238,17 @@ footer{
     .character_name{
         font-size: 10px; /* título menor */
         padding: 5px;
+    }
+    footer{
+        height: 105px;
+        padding: 10px 0;
+        row-gap: 15px;
+    }
+    .footer_logo{
+    font-size: 15px;
+    }
+    .copyright{
+        font-size: 10px;
     }
 }
 @media(max-width: 480px){
