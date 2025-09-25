@@ -224,7 +224,7 @@ footer{
         padding: 0;
     }
     .logo{
-    margin-left: 0;
+    align-items: center;
     }
     .modal_content{
     width: 80vw;
